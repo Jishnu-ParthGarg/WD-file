@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.input-box {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #21618c;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f2f3f4;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+li span {
+    flex: 1;
+}
+
+li span.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li .delete {
+    background-color: #e74c3c;
+}
+
+li .delete:hover {
+    background-color: #b03a2e;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 85%;
+        margin: 30px auto;
+    }
+
+    .input-box {
+        flex-wrap: wrap;
+    }
+
+    .input-box input {
+        width: 100%;
+        padding: 10px;
+    }
+}
